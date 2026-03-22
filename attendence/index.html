@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendify – Smart Attendance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/906/906175.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div id="mainContent">
+<!-- 🔵 Intro Section -->
+<div id="intro">
+    <p style="text-align:center; color:#94a3b8;">
+    Track attendance. Stay above 75%. Stress less 😎
+</p>
+    <h2>Select Regulation</h2>
+    <button onclick="selectRegulation('overall')">Overall 75%</button>
+    <button onclick="selectRegulation('subject')">Subject-wise 75%</button>
+</div>
+
+<!-- 🔵 Mode Section -->
+<div id="modeSection" style="display:none;">
+    <h2>Select Mode</h2>
+
+    <div class="mode-buttons">   <!-- ✅ ADD THIS -->
+        <button onclick="selectMode('known')">I know total semester classes</button>
+        <button onclick="selectMode('unknown')">I don't know total classes</button>
+    </div>
+
+</div>
+
+<!-- 🔵 Dashboard -->
+<div id="dashboard" style="display:none;">
+
+    <h2>Attendance Dashboard</h2>
+
+<div class="input-row">
+
+    <!-- subject -->
+    <div id="subjectField">
+        <input type="text" id="subject" placeholder="Subject Name">
+    </div>
+
+    <!-- total sem -->
+    <div id="totalSemField" style="display:none;">
+        <input type="number" id="totalSem" placeholder="Total Semester Classes" min="1">
+    </div>
+
+    <!-- common -->
+    <input type="number" id="total" placeholder="Classes Held" min="1">
+    <!-- <input type="number" id="attended" placeholder="Classes Attended" min="0" max="total"> -->
+    <input type="number" id="attended" placeholder="Classes Attended" min="0">
+
+    <button onclick="addSubject()">Add</button>
+
+</div>
+
+    <h3>Subjects</h3>
+    <div id="subjectsList"></div>
+
+    <h3>Overall</h3>
+    <div id="overall"></div>
+
+</div>
+
+        <!-- <p>${status}</p> -->
+</div>
+<footer>
+    <p>🚀 Built by Harshith Pathipaka</p>
+    <!-- <a href="https://instagram.com/YOUR_ID" target="_blank">Instagram</a> -->
+    <a href="https://www.linkedin.com/in/harshithpathipaka/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKUXKOobKQ8uUgg3HI%2FslFg%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="mailto:harshithkumarpathipaka@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://github.com/HarshithPathipaka-Git" target="_blank"><i class="fa-brands fa-github"></i></a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+
+</html>

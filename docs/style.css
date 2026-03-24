@@ -32,11 +32,9 @@
 
 #intro button {
     margin: 10px;
-}
-
-#intro button {
     min-width: 160px;
 }
+
 
 * {
     transition: all 0.2s ease;
@@ -50,12 +48,12 @@
     margin-top: 100px;
 }
 
-#modeSection div {
+/* #modeSection div {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-}
+} */
 
 .mode-buttons {
     display: flex;
@@ -66,7 +64,7 @@
 }
 
 .mode-buttons button {
-    min-width: 220px;
+    min-width: 150px;
 }
 
 #title {

@@ -18,21 +18,27 @@
 <div id="mainContent">
 <!-- 🔵 Intro Section -->
 <div id="intro">
-    <p style="text-align:center; color:#94a3b8;">
+    <p style="text-align:center; color:#555f6d;">
     Track attendance. Stay above 75%. Stress less 😎
 </p>
-    <h2>Select Regulation</h2>
-    <button onclick="selectRegulation('overall')">Overall 75%</button>
-    <button onclick="selectRegulation('subject')">Subject-wise 75%</button>
+    <h2>Choose Your Attendance Rule</h2>
+    <button onclick="selectRegulation('overall')">Overall Attendance (75%)</button>
+     <p style="text-align:center; color:#ffffff;">
+    Based on total classes. Simple & effective 🚀
+</p>
+    <button onclick="selectRegulation('subject')">Subject-wise Attendance (75% per subject)</button>
+     <p style="text-align:center; color:#ffffff;">
+    Based on each subject. Best for detailed tracking 🎯
+</p>
 </div>
 
 <!-- 🔵 Mode Section -->
 <div id="modeSection" style="display:none;">
-    <h2>Select Mode</h2>
+    <h2>Choose Input Method</h2>
 
     <div class="mode-buttons">   <!-- ✅ ADD THIS -->
-        <button onclick="selectMode('known')">I know total semester classes</button>
-        <button onclick="selectMode('unknown')">I don't know total semester classes</button>
+        <button onclick="selectMode('known')">I know total classes</button>
+        <button onclick="selectMode('unknown')">I want to estimate</button>
     </div>
 
 </div>
